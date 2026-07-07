@@ -6,6 +6,7 @@ export interface Props {
   description?: string;
 }
 
+const base = import.meta.env.BASE_URL;
 const { title = "Imperio W — Arena, Grava y Materiales", description = "Distribución de arena azul, itabo, grava y empaque. Entregas con camiones 17-20mt a todo el país desde San Cristóbal." } = Astro.props;
 ---
 
@@ -19,7 +20,7 @@ const { title = "Imperio W — Arena, Grava y Materiales", description = "Distri
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="icon" type="image/png" href={`${base}images/logo.png`} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body class="antialiased">

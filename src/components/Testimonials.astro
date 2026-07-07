@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL;
+---
 <section id="clientes" class="relative py-28 lg:py-40 overflow-hidden">
   <div class="absolute inset-0 bg-gradient-to-b from-surface via-brand/[0.02] to-surface dark:from-surface-dark dark:via-brand/[0.03] dark:to-surface-dark" />
   <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -17,7 +19,7 @@
           </div>
           <p class="text-sm text-muted dark:text-muted-dark leading-relaxed">"Siempre me entregan a tiempo y la arena azul es de la mejor calidad. Los recomiendo para cualquier obra."</p>
           <div class="flex items-center gap-3">
-            <img src="/images/testimonial-1.jpg" alt="Carlos M." class="w-10 h-10 rounded-full object-cover" />
+            <img src={`${base}images/testimonial-1.jpg`} alt="Carlos M." class="w-10 h-10 rounded-full object-cover" />
             <div>
               <div class="font-semibold text-ink dark:text-ink-dark text-sm">Carlos M.</div>
               <div class="text-xs text-muted dark:text-muted-dark">Contratista, Santo Domingo</div>
@@ -34,7 +36,7 @@
           </div>
           <p class="text-sm text-muted dark:text-muted-dark leading-relaxed">"El itabo que compré para mi proyecto fue excelente. El camión de 20mt me rindió perfecto para los cimientos."</p>
           <div class="flex items-center gap-3">
-            <img src="/images/testimonial-2.jpg" alt="Roberto P." class="w-10 h-10 rounded-full object-cover" />
+            <img src={`${base}images/testimonial-2.jpg`} alt="Roberto P." class="w-10 h-10 rounded-full object-cover" />
             <div>
               <div class="font-semibold text-ink dark:text-ink-dark text-sm">Roberto P.</div>
               <div class="text-xs text-muted dark:text-muted-dark">Ingeniero civil, San Cristóbal</div>
@@ -51,7 +53,7 @@
           </div>
           <p class="text-sm text-muted dark:text-muted-dark leading-relaxed">"Grava de primera y el servicio de entrega es puntual. Llevo 3 años trabajando con ellos."</p>
           <div class="flex items-center gap-3">
-            <img src="/images/testimonial-3.jpg" alt="Miguel A." class="w-10 h-10 rounded-full object-cover" />
+            <img src={`${base}images/testimonial-3.jpg`} alt="Miguel A." class="w-10 h-10 rounded-full object-cover" />
             <div>
               <div class="font-semibold text-ink dark:text-ink-dark text-sm">Miguel A.</div>
               <div class="text-xs text-muted dark:text-muted-dark">Maestro constructor, Baní</div>

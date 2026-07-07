@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL;
+---
 <section id="cobertura" class="relative py-28 lg:py-40 overflow-hidden">
   <div class="absolute inset-0 bg-surface dark:bg-surface-dark" />
   <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -15,7 +17,7 @@
         <div class="p-1.5 rounded-[2rem] bg-border dark:bg-border-dark">
           <div class="rounded-[calc(2rem-0.375rem)] overflow-hidden bg-white dark:bg-surface-dark p-8 lg:p-12">
             <div class="relative aspect-[16/9] rounded-2xl overflow-hidden">
-              <img src="/images/dump-truck.jpg" alt="Cobertura nacional" class="w-full h-full object-cover" />
+              <img src={`${base}images/dump-truck.jpg`} alt="Cobertura nacional" class="w-full h-full object-cover" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div class="absolute bottom-6 left-6 text-white">
                 <div class="font-bold text-xl">Cobertura nacional</div>
