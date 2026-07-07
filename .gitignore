@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local video files (use CDN URLs instead)
+public/videos/
+vid*.mp4

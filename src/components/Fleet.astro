@@ -42,9 +42,14 @@
       <div class="relative p-1.5 rounded-[2rem] bg-gradient-to-b from-brand/20 to-transparent lg:sticky lg:top-28">
         <div class="rounded-[calc(2rem-0.375rem)] overflow-hidden bg-white dark:bg-surface-dark">
           <div class="relative">
-            <video class="aspect-[4/3] w-full object-cover" autoplay muted loop playsinline preload="auto">
-              <source src="/videos/fleet.mp4" type="video/mp4" />
-            </video>
+            <img
+              src="https://images.unsplash.com/photo-1565947256685-e8089e88ddda?fm=jpg&q=80&w=800&h=600&fit=crop"
+              srcset="https://images.unsplash.com/photo-1565947256685-e8089e88ddda?fm=jpg&q=80&w=400 400w, https://images.unsplash.com/photo-1565947256685-e8089e88ddda?fm=jpg&q=80&w=800 800w"
+              sizes="(max-width:768px) 100vw, 600px"
+              alt="Camión de volteo"
+              class="aspect-[4/3] w-full object-cover"
+              loading="lazy"
+            />
             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
           </div>
         </div>
